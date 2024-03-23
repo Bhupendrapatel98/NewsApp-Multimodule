@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -11,8 +12,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/news" />
             <option value="$PROJECT_DIR$/news/news_data" />
+            <option value="$PROJECT_DIR$/news/news_domain" />
+            <option value="$PROJECT_DIR$/news/news_presentation" />
+            <option value="$PROJECT_DIR$/search" />
+            <option value="$PROJECT_DIR$/search/domain" />
+            <option value="$PROJECT_DIR$/search/presentation" />
+            <option value="$PROJECT_DIR$/search/search_data" />
           </set>
         </option>
       </GradleProjectSettings>

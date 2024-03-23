@@ -15,3 +15,8 @@ dependencyResolutionManagement {
 rootProject.name = "NewsAppApplication"
 include ':app'
 include ':news:news_data'
+include ':news:news_domain'
+include ':news:news_presentation'
+include ':search:search_data'
+include ':search:domain'
+include ':search:presentation'
