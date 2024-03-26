@@ -42,6 +42,7 @@ dependencies {
     //we can access these module
     implementation project(":search:presentation")
     implementation project(":news:news_presentation")
+    implementation project(":common:common_utills")
 
     implementation Deps.core
     implementation Deps.appcompat
