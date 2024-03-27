@@ -43,6 +43,8 @@ dependencies {
     implementation project(":search:presentation")
     implementation project(":news:news_presentation")
     implementation project(":common:common_utills")
+    implementation project(":news:news_domain")
+    implementation project(":news:news_data")
 
     implementation Deps.core
     implementation Deps.appcompat

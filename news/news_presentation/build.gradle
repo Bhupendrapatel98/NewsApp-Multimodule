@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
 }
 
 android {
@@ -28,11 +30,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    dataBinding{
+        enabled=true
+    }
 }
 
 dependencies {
 
     implementation project(":common:common_utills")
+    implementation project(":news:news_domain")
 
     implementation Deps.core
     implementation Deps.appcompat
@@ -44,4 +51,15 @@ dependencies {
     testImplementation TestImplementation.testImplJunit
     androidTestImplementation AndroidTestImplementation.androidTestImplJunit
     androidTestImplementation AndroidTestImplementation.androidTestEspresso
+
+    implementation DaggerHilt.hilt
+    kapt DaggerHilt.hiltAndroidCompiler
+    kapt DaggerHilt.hiltCompiler
+
+    implementation ViewModelDelegate.viewModelDeligate
+
+    implementation Glide.glide
+    annotationProcessor Glide.annotationProcessor
+
+    implementation CircularProgressBar.swipeRefresh
 }
