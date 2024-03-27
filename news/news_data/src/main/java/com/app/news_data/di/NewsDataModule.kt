@@ -2,6 +2,7 @@ package com.app.news_data.di
 
 import com.app.news_data.network.NewsApiService
 import com.app.news_data.repository.NewsRepoImpl
+import com.app.news_data.room.NewsDao
 import com.app.news_domain.repository.NewsRepository
 import dagger.Module
 import dagger.Provides
@@ -19,7 +20,7 @@ object NewsDataModule {
     }
 
     @Provides
-    fun provideNewsRepository(newsApiService: NewsApiService): NewsRepository {
-        return NewsRepoImpl(newsApiService)
+    fun provideNewsRepository(newsApiService: NewsApiService,newsDao: NewsDao): NewsRepository {
+        return NewsRepoImpl(newsApiService,newsDao)
     }
 }

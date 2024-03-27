@@ -2,6 +2,8 @@ package com.app.newsappapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.app.common_utills.Activities
@@ -22,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.white)
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        provider.getActivities(Activities.NewsActivity).navigate(this)
+        Handler(Looper.myLooper()!!).postDelayed({
+            provider.getActivities(Activities.NewsActivity).navigate(this)
+            finish()
+        },1500)
+
     }
 }
