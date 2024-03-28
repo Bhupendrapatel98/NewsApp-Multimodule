@@ -2,12 +2,16 @@
 Newsify is a sleek and intuitive Android application designed to keep users updated with the latest news articles. 
 It provides a seamless experience for browsing news headlines, reading detailed articles, and searching for specific topics of interest.
 
-# Features
+<img src="https://github.com/Bhupendrapatel98/NewsApp-Multimodule/assets/55411086/caf349be-cc75-4ab0-9d17-35e524e072f8" alt="Image 1" width="100">
+
+<img src="https://github.com/Bhupendrapatel98/NewsApp-Multimodule/assets/55411086/b512a7e0-b18e-46fb-a450-93be449543dd" alt="Image 1" width="100">
+
 - **Browse News Headlines**: Users can explore a curated list of news headlines from various reliable sources.
 - **Read Detailed Articles**: Dive into detailed articles with rich content including title, description, and accompanying images.
 - **Search Feature**: Search for specific topics or keywords to find relevant news articles quickly.
 - **Dependency Injection (DI)**: Utilizes DI for managing dependencies, promoting modularity and easier testing.
 - **Caching with Room**: Implements caching mechanism using Room database to store and retrieve news articles locally, ensuring offline access and faster loading times.
+- **Multi-Module**: Organized into multiple modules for better code organization, scalability, and maintainability.
 
 # Technologies Used
 - **Kotlin**: The primary programming language used for developing the application, offering concise syntax and powerful features.
